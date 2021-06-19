@@ -10,11 +10,12 @@
       <h1 class="font-bold text-yellow-900 text-center">Banano FYI</h1>
       <h2 class="text-gray-700">On-chain public notes using experimental technology.</h2>
 
-      <div id="importSeedForm" class="mt-8 mb-1 grid md:grid-cols-12 gap-2 sm:grid-cols-10">
+      <div id="importSeedForm" class="mt-8 mb-1 grid grid-cols-8 gap-2">
         <h1 class="col-span-12 font-bold text-green-600 text-center">Import seed</h1>
-        <label for="accountSeed" class="col-span-1 self-center font-bold text-green-600">Seed:</label>
-        <input id="accountSeed" class="col-span-9 pt-1 pb-1 pl-1 shadow border rounded border-green-300 hover:border-green-400 focus:outline-none focus:ring focus:ring-green-400">
-        <button id="importButton" class="col-span-2 pt-1 pb-1 pl-2 pr-2 shadow text-white bg-green-500 rounded-lg hover:bg-green-600 focus:outline-none">Import</button>
+        <label for="accountSeed" class="col-span-8 md:col-span-1 self-center font-bold text-green-600">Seed:</label>
+        <input id="accountSeed" class="col-span-6 md:col-span-8 pt-1 pb-1 pl-2 shadow border rounded border-green-300 hover:border-green-400 focus:outline-none focus:ring focus:ring-green-400"></input>
+        <input id="accountIndex" class="col-span-2 md:col-span-1 pt-1 pb-1 pl-2 shadow border rounded border-green-300 hover:border-green-400 focus:outline-none focus:ring focus:ring-green-400" placeholder="index"></input>
+        <button id="importButton" class="col-span-8 md:col-span-1 pt-1 pb-1 pl-2 pr-2 shadow text-white bg-green-500 rounded-lg hover:bg-green-600 focus:outline-none">Import</button>
       </div>
 
     </div>
