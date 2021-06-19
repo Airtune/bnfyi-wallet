@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es5",
+    "outDir": "build",
+    "types": ["node"]
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
