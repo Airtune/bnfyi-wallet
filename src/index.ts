@@ -1,2 +1,4 @@
 import './polyfill';
-import * as bnfyi from 'bnfyi';
+import './import-form';
+import './account-ui';
+import './send-form';

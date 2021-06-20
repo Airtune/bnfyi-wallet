@@ -10,14 +10,29 @@
       <h1 class="font-bold text-yellow-900 text-center">Banano FYI</h1>
       <h2 class="text-gray-700">On-chain public notes using experimental technology.</h2>
 
-      <div id="importSeedForm" class="mt-8 mb-1 grid grid-cols-8 gap-2">
+      <form id="importSeedForm" class="mt-8 mb-1 grid grid-cols-8 gap-2" href="#" onclick="event.preventDefault();">
         <h1 class="col-span-12 font-bold text-green-600 text-center">Import seed</h1>
-        <label for="accountSeed" class="col-span-8 md:col-span-1 self-center font-bold text-green-600">Seed:</label>
-        <input id="accountSeed" class="col-span-6 md:col-span-8 pt-1 pb-1 pl-2 shadow border rounded border-green-300 hover:border-green-400 focus:outline-none focus:ring focus:ring-green-400"></input>
-        <input id="accountIndex" class="col-span-2 md:col-span-1 pt-1 pb-1 pl-2 shadow border rounded border-green-300 hover:border-green-400 focus:outline-none focus:ring focus:ring-green-400" placeholder="index"></input>
+        <label for="seedInput" class="col-span-8 md:col-span-1 self-center font-bold text-green-600">Seed:</label>
+        <input id="seedInput" class="col-span-6 md:col-span-8 pt-1 pb-1 pl-2 shadow border rounded border-green-300 hover:border-green-400 focus:outline-none focus:ring focus:ring-green-400"></input>
+        <input id="seedIndexInput" class="col-span-2 md:col-span-1 pt-1 pb-1 pl-2 shadow border rounded border-green-300 hover:border-green-400 focus:outline-none focus:ring focus:ring-green-400" placeholder="index"></input>
         <button id="importButton" class="col-span-8 md:col-span-1 pt-1 pb-1 pl-2 pr-2 shadow text-white bg-green-500 rounded-lg hover:bg-green-600 focus:outline-none">Import</button>
+      </form>
+
+      <div id="accountHistory" class="mt-8 mb-1 grid grid-cols-12 gap-2">
       </div>
 
+      <form id="sendForm" class="hidden" href="#" onclick="event.preventDefault();">
+        <div class="mt-8 mb-1 grid grid-cols-8 gap-2">
+          <h1 class="col-span-12 font-bold text-blue-600 text-center">Send</h1>
+          <label for="sendRecipientInput" class="col-span-8 self-center font-bold text-blue-600">Send:</label>
+          <input id="sendRecipientInput" class="col-span-8 pt-1 pb-1 pl-2 shadow border rounded border-blue-300 hover:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400" placeholder="ban_"></input>
+          <label for="sendAmountInput" class="col-span-8 self-center font-bold text-blue-600">Amount:</label>
+          <input id="sendAmountInput" class="col-span-8 pt-1 pb-1 pl-2 shadow border rounded border-blue-300 hover:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400" placeholder="1.9"></input>
+          <label for="sendNoteInput" class="col-span-8 self-center font-bold text-blue-600">Note:</label>
+          <input id="sendNoteInput" class="col-span-8 pt-1 pb-1 pl-2 shadow border rounded border-blue-300 hover:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400" placeholder="note"></input>
+          <button id="sendButton" class="col-span-8 pt-1 pb-1 pl-2 pr-2 shadow text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:outline-none">Send</button>
+        </div>
+      </form>
     </div>
     <!-- reference our main.js file webpack built -->
     <script src="main.js"></script>
