@@ -14,7 +14,7 @@
     "@bananocoin/bananojs": "^2.4.11",
     "@types/node": "^15.12.2",
     "autoprefixer": "^10.2.6",
-    "bnfyi": "file:../bnfyi-js",
+    "bnfyi": "git+https://github.com/Airtune/bnfyi-js.git",
     "buffer": "^6.0.3",
     "crypto": "^1.0.1",
     "crypto-browserify": "^3.12.0",
